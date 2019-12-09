@@ -1,0 +1,17 @@
+$color-1: #a87749;
+$color-2: #c0674c;
+
+$color-dark: rgb(156, 147, 63);
+$color-light: #fff;
+
+
+
+$color-bg: #e1e446;
+$color-bg-hover: lighten($color-bg, 7);
+$color-bg-header: #e1e9e9;
+$color-bg-footer: darken(mix($color-1, $color-2), 15);
+
+$color-text-1: #efefef;
+
+
+$color-error: #ff3a68;

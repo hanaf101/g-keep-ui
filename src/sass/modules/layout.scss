@@ -1,0 +1,25 @@
+
+body {
+	min-height: 100vh;
+	background-color: $color-bg;
+	margin-right: 10px;
+
+}
+
+#header {
+	grid-area: _header;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+}
+
+#body {
+	grid-area: _body;
+}
+
+#footer {
+	grid-area: _footer;
+}
+
