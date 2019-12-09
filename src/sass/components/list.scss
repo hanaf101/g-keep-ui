@@ -1,8 +1,11 @@
 .list {
     list-style: none;
-    padding-left: 0;
+    padding: 5%;
+    padding-top: 1%;
+    width:"60%";
 
     &> .list-item {
+
         background-color: $color-bg-hover;
         padding: $gap/2 $gap;
         margin: $gap/10 0;
@@ -17,28 +20,9 @@
             margin-right: auto;
         }
 
-        // .checkbox {
-        //     &+ label {
-        //         flex: 0 0 auto;
-        //     }   
-            
-        //     &:checked {
-        //         &~ .text {
-        //             text-decoration: line-through;
-        //         }
-        //     }
-        // }
-
         &.done {
             background-color: lighten($color-dark, 18);
             color: darken($color-text-1, 30);
-        }
-
-        &:hover {
-            .icon-delete {
-                visibility: visible;
-                opacity: 1;
-            }
         }
 
         &:not(.done):hover {

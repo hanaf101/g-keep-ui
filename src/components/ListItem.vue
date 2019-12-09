@@ -1,11 +1,8 @@
 <template>
-	<li class="list-item" :class="{ done: isDone }">
-        <!-- <input type="checkbox" class="checkbox" :id="idComputed" @change="onTaskStatusChange" :checked="isDone"> -->
-        <label class="mr-3" :for="idComputed"></label>
+	<li class="list-item" :class="{done : done}">
         <span class="text">
-            {{ text }}
+            {{text}}
         </span>
-        <span class="icon-delete" @click="onTaskDelete"></span>
     </li>
 </template>
 
@@ -14,27 +11,19 @@
         name: "ListItem",
         props: {
             id: {
-                type: Number,
-                default: 0
+                type: String, 
+                default: ""
             },
             text: {
                 type: String,
                 default: ""
             },
-            isDone: {
+            done: {
                 type: Boolean,
                 default: false
             }
         },
-        
         methods: {
-            /**
-             * Event: on task status changed
-             */
-            onTaskStatusChange(e) {
-                const checked = e.target.checked
-                this.$emit("eventTaskStatusChange", this.id, checked)
-            }
         }
     }
 </script>

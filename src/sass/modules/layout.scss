@@ -3,7 +3,6 @@ body {
 	min-height: 100vh;
 	background-color: $color-bg;
 	margin-right: 10px;
-
 }
 
 #header {
@@ -13,6 +12,7 @@ body {
 h1 {
 	display: flex;
 	justify-content: center;
+	color:gray;
 }
 
 #body {
@@ -22,4 +22,3 @@ h1 {
 #footer {
 	grid-area: _footer;
 }
-

@@ -1,10 +1,8 @@
 .btn {
-    position: relative;
     margin-left: 1%;
-    display: flex;
     justify-content: center;
     margin-top: 1%;
-    background-color: rgb(145, 119, 48);
+    background-color: rgb(44, 110, 172);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -12,5 +10,5 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    padding: $gap*0.75 $gap*1.5;
+    
 }
