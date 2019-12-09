@@ -48,7 +48,7 @@
              * Load item list from db via GET call to NEST service
              */
             loadItemList() {
-                axios.get(`http://localhost:3002/notes`)
+                axios.get('http://localhost:3002/notes')
                      .then(response => {
                         this.itemList = response.data || []
                     }).catch(e => {
