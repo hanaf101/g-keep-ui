@@ -32,7 +32,7 @@
 			 */
 			onAddNewTask(taskName) {
                 let that=this;
-                axios.post('http://localhost:3002/notes', {
+                axios.post('/notes', {
                     title: taskName,
                     description: '',
                     done: false
@@ -48,7 +48,7 @@
              * Load item list from db via GET call to NEST service
              */
             loadItemList() {
-                axios.get('http://localhost:3002/notes')
+                axios.get('/notes')
                      .then(response => {
                         this.itemList = response.data || []
                     }).catch(e => {
