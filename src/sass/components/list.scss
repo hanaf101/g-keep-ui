@@ -1,0 +1,32 @@
+.list {
+    list-style: none;
+    padding: 5%;
+    padding-top: 1%;
+    width:"60%";
+
+    &> .list-item {
+
+        background-color: $color-bg-hover;
+        padding: $gap/2 $gap;
+        margin: $gap/10 0;
+        box-shadow: 0 0 0 $gap/10 darken($color-bg-hover, 7);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all ease 200ms;
+
+        .text {
+            display: inline-block;
+            margin-right: auto;
+        }
+
+        &.done {
+            background-color: lighten($color-dark, 18);
+            color: darken($color-text-1, 30);
+        }
+
+        &:not(.done):hover {
+            background-color: lighten($color-bg-hover, 5);
+        }
+    }
+}
