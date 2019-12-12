@@ -1,5 +1,6 @@
 <template>
 	<li class="list-item" :class="{done : done}">
+        <input type="checkbox" class="checkbox" :checked="done">
         <span class="text">
             {{text}}
         </span>

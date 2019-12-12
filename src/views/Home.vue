@@ -4,20 +4,7 @@
 			<ToDoInput @eventAddNewTask="onAddNewTask"/>
 			<ul class="list mt-3">
                 <CheckListInput/>
-
-                 <form id="chart_datas"  >
-                    <div class="grid-container">
-                        <div class="grid-x grid-padding-x input_wrp">
-                            <div class="small-1 cell column">
-                                <label>
-                                    <input type="text" placeholder="id">
-                                   <input type="submit" value="submit" class="btn" >
-                                </label>
-                            </div>
-                        </div>
-                       
-                    </div>  
-                </form>
+                <FormInput @eventAddNewTask="onAddNewTask"/>
 				<ListItem v-for="item in itemList" :key="item._id"   :id="item._id" :text="item.title" />
 			</ul>
 		</div>
@@ -28,13 +15,15 @@
 	// @ is an alias to /src
 	import ToDoInput from "@/components/ToDoInput.vue"
     import ListItem from "@/components/ListItem.vue"
+    import FormInput from "@/components/FormInput.vue"
     import axios from 'axios';
 
 	export default {
 		name: "Home",
 		components: {
 			ToDoInput,
-			ListItem
+            ListItem,
+            FormInput
 		},
 		data() {
             return {
