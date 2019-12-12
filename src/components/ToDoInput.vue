@@ -1,8 +1,15 @@
 <template>
+	<div>
+		
 	<form @submit="onAddNewTask">
 		<input type="text" placeholder="What needs to be done?" v-model="text" required>
 		<input type="submit" value="submit" class="btn" >
 	</form>
+
+
+	
+	</div>
+
 </template>
 
 <script>

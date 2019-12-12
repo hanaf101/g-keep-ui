@@ -3,6 +3,25 @@
 		<div class="col-lg-4">
 			<ToDoInput @eventAddNewTask="onAddNewTask"/>
 			<ul class="list mt-3">
+                <CheckListInput/>
+                <li class="list-item" >
+                        <form id="chart_datas"  >
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x input_wrp">
+          <div class="small-1 cell column">
+            <label>
+              <input type="text" placeholder="id">
+            </label>
+          </div>
+         
+        </div>
+        
+         <div class="addRowBtn" v-on:click.prevent="addRow" value=""><i class="fa fa-plus" aria-hidden="true"></i></div>
+      </div>  
+
+    </form>
+
+                </li>    
 				<ListItem v-for="item in itemList" :key="item._id"   :id="item._id" :text="item.title" />
 			</ul>
 		</div>
